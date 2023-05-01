@@ -40,3 +40,10 @@ def gui_show(window, canvas, scene, SHOW_FLAG=True):
     canvas.scene(scene)
     # window.save_image(f'png/{n}.png')
     window.show()
+   
+if __name__ = '__main__':
+    window, camera, scene = gui_set()
+    canvas = window.get_canvas()
+    
+    # the time need show the simulation
+    gui_show(window, canvas, scene)
